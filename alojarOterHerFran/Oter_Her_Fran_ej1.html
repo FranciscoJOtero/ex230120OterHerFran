@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="Oter_Her_Fran_style1.css">
+        <title> Examen 23-01-2020 /OterHerFran / Ej1  </title>
+    </head>
+    <body>
+
+        <header>
+            <h1> Inicio del examen 23-01-2020 Alumno: OterHerFran </h1>
+
+            <figure>
+                <img src="./img/Recurso1.png" alt="Recurso 1">
+                <figcaption> Imagen editada por OterHerFran </figcaption>
+            </figure>
+
+            <div class="licencia">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /> </a>
+                <br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licencia Creative Commons Atribución-NoComercial 4.0 Internacional</a>.
+            </div>
+        </header> <br> <br>
+
+        <section class="contenedorGrid">
+            <div class="OterHerFranContenedor1ConBordeVerde"> 
+                <picture>
+                    <source media="(min-width: 500px)" srcset="./img/Recurso2.jpg"> 
+                    <source media="(min-width: 400px)" srcset="./img/Recurso3.jpg"> 
+                    <img src="./img/Recurso4.jpg" alt="Imagen retrocompatible" style="width:auto;">
+                </picture>
+            </div>
+
+            <script> // Primero comprobamos la compatibilidad del navegador 
+            
+            if (typeof(Storage) !== "undefined") { //Almacenamos 
+                localStorage.setItem("equipo", "Deportivo"); //Obtenemos los datos 
+                document.getElementById("elementoAlmacen").innerHTML = localStorage.getItem("equipo");
+
+            } else { 
+                document.getElementById("elementoAlmacen").innerHTML = "El navegador no es compatible con almacenamiento local"; 
+            } 
+
+            </script>
+
+            <div class="OterHerFranContenedor1ConBordeAzul"> 
+                <button class="botonImg"> Contador </button>
+            </div>
+            <div class="elementoAlmacen">
+            </div>
+        </section> <br> <br> 
+
+        <footer class="footGrid">
+            <div class="capa1"> 
+
+            </div>
+            <div class="capa2">  
+                <audio id="audio1" controls> 
+                <source src="./audio/Recurso7.mp3" type="audio/mpeg"> 
+                <source src="./audio/Recurso7.ogg" type="audio/ogg"> 
+                <source src="./audio/Recurso7.wav" type="audio/wav"> 
+                Tu navegador no soporta esta etiqueta HTML5 
+            </audio> <br> <br>
+            <button onclick="document.getElementById('audio1').play()">Reproducir el Audio</button>
+            </div>
+            <div class="capa3">  
+                <a href="Oter_Her_Fran_ej2.html"> Ir al ejercicio 2 </a>
+            </div>
+        </footer>
+    </body>
+</html>

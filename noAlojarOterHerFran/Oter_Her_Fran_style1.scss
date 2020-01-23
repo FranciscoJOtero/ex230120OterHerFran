@@ -1,0 +1,88 @@
+%borde {
+
+    border: 2px solid blueviolet;
+
+}
+
+header {
+
+    display: grid;
+    width: 100%;
+    min-height: 300px;
+    @extend %borde;
+
+    > h1 {
+
+        text-align: center;
+    }
+}
+
+.figure {
+    text-align: center;
+}
+
+.licencia {
+
+    text-align: center;
+    
+}
+
+@mixin bordeVerde($color) {
+
+    border: 2px solid $color;
+    
+}
+
+%bordeAzul {
+
+    border: 2px solid blue;
+
+}
+
+.contenedorGrid {
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    .OterHerFranContenedor1ConBordeVerde {
+
+        @include bordeVerde(green);
+
+    }
+
+    .OterHerFranContenedor1ConBordeAzul {
+
+        @extend %bordeAzul;
+
+    }
+
+}
+
+.botonImg {
+
+    background-image: url("img/Recurso5.png");
+
+}
+
+
+.footGrid {
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+    .capa2 {
+
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .capa3 {
+
+        justify-content: center;
+        align-content: center;
+
+    }
+
+}
+

@@ -1,0 +1,50 @@
+header {
+  border: 2px solid blueviolet;
+}
+
+header {
+  display: grid;
+  width: 100%;
+  min-height: 300px;
+}
+header > h1 {
+  text-align: center;
+}
+
+.figure {
+  text-align: center;
+}
+
+.licencia {
+  text-align: center;
+}
+
+.contenedorGrid .OterHerFranContenedor1ConBordeAzul {
+  border: 2px solid blue;
+}
+
+.contenedorGrid {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.contenedorGrid .OterHerFranContenedor1ConBordeVerde {
+  border: 2px solid green;
+}
+.botonImg {
+  background-image: url("img/Recurso5.png");
+}
+
+.footGrid {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.footGrid .capa2 {
+  justify-content: center;
+  align-content: center;
+}
+.footGrid .capa3 {
+  justify-content: center;
+  align-content: center;
+}
+
+/*# sourceMappingURL=Oter_Her_Fran_style1.css.map */
